@@ -10,16 +10,20 @@ class Dock
   end
 
   def rent(boat, renter)
+    boat.rent
     @rented_boats << boat
     boat.add_hour
     boat.hours_rented
   end
 
   def return(boat)
+    boat.return
     @retuned = boat.hours_rented
   end
   
   def log_hour
-    rented_boats.each {|b| b.add_hour}
+    rented_boats.each do |boat|
+      boat.add_hour if boat.rented
+    end
   end
 end

@@ -99,7 +99,7 @@ pry(main)> kayak_1 = Boat.new(:kayak, 20)
 
 pry(main)> kayak_2 = Boat.new(:kayak, 20)    
 
-pry(main)> canoe = Boat.new(:canoe, 25)    
+pry(main)> canoe = Boat.new(:canoe, 30)    
 
 pry(main)> sup_1 = Boat.new(:standup_paddle_board, 15)    
 
@@ -128,7 +128,7 @@ pry(main)> dock.return(canoe)
 
 # Revenue thus far
 pry(main)> dock.revenue
-#=> 105
+#=> 110
 
 # Rent Boats out to second Renter
 pry(main)> dock.rent(sup_1, eugene)
@@ -152,7 +152,7 @@ pry(main)> dock.return(sup_2)
 
 # Total revenue
 pry(main)> dock.revenue
-#=> 195
+#=> 200
 ```
 
 ## Iteration 4
@@ -172,7 +172,7 @@ pry(main)> kayak_1 = Boat.new(:kayak, 20)
 
 pry(main)> kayak_2 = Boat.new(:kayak, 20)    
 
-pry(main)> canoe = Boat.new(:canoe, 25)    
+pry(main)> canoe = Boat.new(:canoe, 30)    
 
 pry(main)> sup_1 = Boat.new(:standup_paddle_board, 15)    
 
@@ -217,7 +217,7 @@ pry(main)> dock.return(sup_1)
 pry(main)> dock.return(sup_2)
 
 pry(main)> dock.charges
-#=> {"4242424242424242" => 105, "1313131313131313" => 90}
+#=> {"4242424242424242" => 110, "1313131313131313" => 90}
 
 pry(main)> dock.total_hours_by_rental_type
 #=> {:kayak => 4, :canoe => 1, :standup_paddle_board => 10}

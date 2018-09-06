@@ -7,7 +7,7 @@ class RenterTest<Minitest::Test
 
   def test_it_exists
     renter = Renter.new("Patrick Star", "4242424242424242")
-    assert_instance of Renter, renter
+    assert_instance_of Renter, renter
   end
 
   def test_renter_has_a_name
